@@ -10,8 +10,8 @@
   },
   "scripts": {
     "lint": "eslint . --ext js,ts",
-    "build": "tsc --build tsconfig.json",
-    "watch": "tsc --build tsconfig.json --watch",
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch",
     "test": "folio --config=test/config.ts",
     "prepare": "npm run build",
     "roll-dogfood": "cd dogfood && npm install",
